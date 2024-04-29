@@ -14,7 +14,7 @@ export default function HomePage() {
     const i=     {
         id: "select",
         sticky: 'left',
-        header: ({ table }) => {
+        header: ({ table }: { table: any })=> {
             console.log(table)
             return (
           <Checkbox
@@ -26,7 +26,7 @@ export default function HomePage() {
           />
         )}
         ,
-        cell:  ({ row }) => (
+        cell:  ({ row }: { row: any }) => (
             <Checkbox
               {...{
                 checked: row.getIsSelected(),
@@ -46,6 +46,7 @@ export default function HomePage() {
             // const { rowSelection, setRowSelection } = useRowSelection();
 
     return (
+
         <div className="flex flex-col gap-10 items-center p-10">
             <span className="text-3xl text-gray-700 font-bold">Task Details</span>
             <div className="max-w-screen-lg flex size-full flex-col">
