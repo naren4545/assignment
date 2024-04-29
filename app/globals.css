@@ -74,3 +74,70 @@
         @apply bg-background text-foreground;
     }
 }
+table.w-full.caption-bottom.text-sm {
+    position: relative;
+}
+
+tr td:first-child {
+    position: sticky;
+    left: 0;
+    background-color: white;
+}
+
+tr td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 999;
+    background-color: white;
+}
+
+tr td:nth-child(2) {
+    position: sticky;
+    left: 24px;
+    z-index: 999;
+    background-color: white;
+}
+
+tr th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 999;
+    background-color: white;
+}
+
+tr th:nth-child(2) {
+    position: sticky;
+    left: 24px;
+    z-index: 999;
+    background-color: white;
+}
+
+tr th:nth-child(3) {
+    position: relative;
+
+}
+table.caption-bottom.text-sm {
+    min-width: 937px;
+}
+.resizer{
+    position: absolute;
+    opacity : 0;
+    top: 0;
+    right: 10px;
+    height: 100%;
+    width: 5px;
+    background: #625f5fe9;
+    cursor: col-resize;
+   
+    border-Radius: 6px;
+  }
+
+
+  .resizer.isResizing {
+    background: #000000;
+    opacity: 1;
+  }
+
+  *:hover > .resizer {
+    opacity: 1;
+  }
